@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f395046c99.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="./IMAGES/logo.png" alt="My logo" class="mylogo"> </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#works">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-list" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello, I'm <span>Asmin </span> <br>Shrestha from Nepal!!</h1>
+
+            </div>
+            <a href="./IMAGES/My Cv.pdf" id="fbtn" class="btn btn2 ">Download CV</a>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMAGES/about me.png" alt="It's me">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello there! I'm <span>Asmin Shrestha</span>, a passionate individual eager to embark on the
+                        exciting journey of technology and creativity. As a budding enthusiast, I'm committed to
+                        learning and growing in the ever-evolving landscape of web development and design. Join me as I
+                        share my experiences, challenges, and the joy of discovery on this exhilarating adventure. Let's
+                        build something amazing together!</p>
+                    <div class="tab-titles">
+                        <!-- onclick="opentab('Skills')" -- To show the content on clicking the skills menu -->
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML <br>CSS <br> JS <br>
+                                PHP</li>
+                            <li><span> Video Editing</span> <br>After Effects <br>Nuke <br>Photoshop <br>Adobe
+                                Illustartor</li>
+                            <li> <span>Content Writing</span></li>
+                        </ul>
+                    </div>
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <li><span> April 2022-July 2023</span> <br> VFX Artist at Godrays Picture <br></li>
+                            <li><span>Jan 2023-Feb 2023</span><br>Content Writer at Traveldetails <br></li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>2021-present</span><br> Studying BIT in Bhaktapur Multiple Campus
+
+                            <li><span>2018-2020</span><br>Plus 2 from LIverpool Int'l College (Physical Science) <br>
+                            </li>
+                            <li><span> 2017-2018</span> <br> SEE from ASBS <br></li>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------Services------------- -->
+    <div id="services" class="container">
+        <!-- -----Heading---- -->
+        <div class="container-services">
+            <h1 class=" sub-title-services"> My Services</h1>
+            <p>I excel in programming languages such as HTML, CSS, and JavaScript, with proficiency levels ranging from
+                90% in HTML to 45% in JavaScript. My skills extend to content creation, where I bring my expertise in
+                content writing (90%), video editing (80%), and photo editing using Photoshop (75%). Additionally, I
+                possess valuable capabilities in Rotoscope/Paintout at a proficiency level of 45%. Let's turn ideas into
+                reality through code and creativity!</p>
+
+        </div>
+        <div class="services-row">
+            <!-- -----left section----- -->
+            <section class="services-row-col">
+                <div class="sub-title">
+                    <h2>Programming Skills</h2>
+
+                </div>
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="subject">HTML</div>
+                        <div class="progress-bar" value="90%">
+                            <div class="progress-line" style="max-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">CSS</div>
+                        <div class="progress-bar" value="75%">
+                            <div class="progress-line" style="max-width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">JS</div>
+                        <div class="progress-bar" value="45%">
+                            <div class="progress-line" style="max-width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">PHP</div>
+                        <div class="progress-bar" value="25%">
+                            <div class="progress-line" style="max-width: 25%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">C / C#</div>
+                        <div class="progress-bar" value="25%">
+                            <div class="progress-line" style="max-width: 25%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------Right section------ -->
+            <section class="services-row-col">
+                <div class="sub-title">
+                    <h2>Other Skills</h2>
+
+                </div>
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="subject">Content Writing</div>
+                        <div class="progress-bar" value="90%">
+                            <div class="progress-line" style="max-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Video Editing</div>
+                        <div class="progress-bar" value="80%">
+                            <div class="progress-line" style="max-width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Photo Editing / Photoshop</div>
+                        <div class="progress-bar" value="75%">
+                            <div class="progress-line" style="max-width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Rotoscope/Paintout</div>
+                        <div class="progress-bar" value="45%">
+                            <div class="progress-line" style="max-width: 45%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+    <!-- ---------My Works-------- -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <p>Discovering the world of coding and design, my works reflect my journey as a beginner exploring the
+                realms of creativity. Each project is a step forward, a canvas where I learn and experiment. Join me on
+                this exciting path, filled with simple yet meaningful creations, as I embrace the joy of being a
+                beginner in the vast world of technology and design.</p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./IMAGES/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Education Website</h3>
+                        <p>This website is for my practice Session. </p>
+                        <a href="https://asminstha.github.io/University_Web_Design/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./IMAGES/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>This is the normal Portfolio for my Brother Which i have made for practice</p>
+                        <a href="https://asminstha.github.io/diamondthapa/index.html"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./IMAGES/work3.png" alt="">
+                    <div class="layer">
+                        <h3>Gym Website</h3>
+                        <p>This is just a random Practice website </p>
+                        <a href="https://www.asminstha.com.np/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -------Achievements------
+ -->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub-title">Achievements</h1>
+            <p>I take pride in my accomplishments, having earned recognition such as the Content Writing Award and the
+                CFC Certificate. These achievements reflect my dedication and passion for excellence in my endeavors.
+                Excited for more milestones ahead!</p>
+            <div class="achievements-list">
+                <div class="achievement">
+                    <img src="./IMAGES/cw.png" alt="">
+
+                </div>
+                <div class="achievement">
+                    <img src="./IMAGES/cfc certificate.png" alt="">
+
+                </div>
+
+            </div>
+            <a href="./IMAGES/content writing certificate.pdf" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------contact------- -->
+    <div id="contact">
+        <div class="c-container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" id="res-contact">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>asim.sth135@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9861362710</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- ----CV----  -->
+                    <a href="./IMAGES/My Cv.pdf" id="resbtn" class="btn btn2">Download CV</a>
+                    <!-- To download the cv directly -->
+                    <!-- <a href="./IMAGES/My Cv.pdf" download="" class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="Message" placeholder="Your Query" cols="3" rows="4"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Made by <span>Asmin Shrestha</span></p>
+        </div>
+    </div>
+
+    <!-- To show the contents of tablinks when clicked  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
